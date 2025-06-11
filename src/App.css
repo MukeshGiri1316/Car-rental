@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #151515;
+  --color-secondary: #393E46;
+  --color-accent: #948979;
+  --color-background: #DFD0B8;
+  --color-textWhite: #FFF6E0;
+  --color-textOrange: #FF9F00;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+@media (width <= 1024px){
+  .container{
+    width: 90%;
+  }
+}
+
+@media (width <=767px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-primary);
+  font-family: "Orbitron", sans-serif;
+}
+
+.p-font {
+  font-family: "Gruppo", sans-serif;
+}
+
+.custom-date-picker {
+  position: relative;
+  padding-right: 40px; /* Make room for the icon */
+}
+.custom-date-picker::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM7 12h5v5H7z"/></svg>');
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.custom-date-picker::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  right: 10px;
+  width: 20px;
+  height: 100%;
+  cursor: pointer;
+}
