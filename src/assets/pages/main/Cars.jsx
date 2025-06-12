@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FaCar, FaDoorOpen, FaCogs, FaGasPump, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaCar, FaDoorOpen, FaCogs, FaGasPump, FaArrowLeft, FaArrowRight, FaTachometerAlt } from "react-icons/fa";
 import { cars } from '../../data/cars.data.js'
+import { Link } from "react-router-dom";
 
 export default function Cars() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -57,7 +58,7 @@ export default function Cars() {
                         {cars.map((car, index) => (
                             <img
                                 key={index}
-                                src={car.image}
+                                src={car.mainImage}
                                 alt={`Car ${index + 1}`}
                                 className={`absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out rounded-t-3xl ${index === currentIndex ? "opacity-100 scale-100 z-10" : "opacity-0 scale-110 z-0"
                                     }`}
@@ -70,13 +71,13 @@ export default function Cars() {
                         {/* Arrows */}
                         <button
                             onClick={handlePrev}
-                            className="absolute left-5 top-1/2 transform -translate-y-1/2 z-30 bg-background text-primary p-3 rounded-full opacity-0 group-hover:opacity-100 transition shadow-lg hover:scale-110"
+                            className="absolute left-5 top-1/2 transform -translate-y-1/2 z-30 bg-background/60 md:bg-background text-primary p-3 rounded-full opacity-100 md:opacity-0 group-hover:opacity-100 transition shadow-lg hover:scale-110"
                         >
                             <FaArrowLeft size={20} />
                         </button>
                         <button
                             onClick={handleNext}
-                            className="absolute right-5 top-1/2 transform -translate-y-1/2 z-30 bg-background text-primary p-3 rounded-full opacity-0 group-hover:opacity-100 transition shadow-lg hover:scale-110"
+                            className="absolute right-5 top-1/2 transform -translate-y-1/2 z-30 bg-background/60 md:bg-background text-primary p-3 rounded-full opacity-100 md:opacity-0 group-hover:opacity-100 transition shadow-lg hover:scale-110"
                         >
                             <FaArrowRight size={20} />
                         </button>
@@ -102,13 +103,13 @@ export default function Cars() {
                                 <span className="font-medium">{cars[currentIndex].engine_type}</span>
                             </div>
                             <div className="flex items-center gap-2">
-                                <FaGasPump className="text-accent" />
+                                <FaTachometerAlt className="text-accent" />
                                 <span className="font-medium">{cars[currentIndex].average_kmpl}</span>
                             </div>
                         </div>
-                        <button className="bg-textOrange text-secondary font-semibold px-6 py-3 rounded-full transition shadow-md">
+                        <Link to={`/car-details/${currentIndex}`} className="bg-textOrange/80 hover:bg-textOrange active:scale-95 text-secondary font-semibold px-6 py-3 rounded-full transition shadow-md cursor-pointer">
                             More Details
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

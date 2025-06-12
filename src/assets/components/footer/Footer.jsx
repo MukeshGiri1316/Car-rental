@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className="bg-primary py-10">
+        <div className="bg-primary py-10 border-t border-accent">
             <footer className="text-textWhite container">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-[#948979]/30">
                     {/* Left: Logo & About */}
@@ -19,9 +19,9 @@ const Footer = () => {
                         <h4 className="text-xl font-semibold text-textOrange mb-4 tracking-wider">Quick Links</h4>
                         <ul className="space-y-2 text-textWhite p-font font-semibold tracking-wider">
                             <li><a href="#about" className="hover:text-textOrange transition">About</a></li>
-                            <li><a href="#contact" className="hover:text-textOrange transition">Contact</a></li>
-                            <li><a href="#book" className="hover:text-textOrange transition">Book a Car</a></li>
+                            <li><a href="#book-a-ride" className="hover:text-textOrange transition">Book a Car</a></li>
                             <li><a href="#cars" className="hover:text-textOrange transition">Cars</a></li>
+                            <li><a href="#contact" className="hover:text-textOrange transition">Services</a></li>
                         </ul>
                     </div>
 

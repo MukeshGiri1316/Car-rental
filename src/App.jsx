@@ -1,22 +1,29 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
-import Header from './assets/components/header/Header'
-import Footer from './assets/components/footer/Footer.jsx'
-import { Hero, About, BookForm, Service, Cars, Contact } from './assets/pages/index.js'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Preloader from './assets/components/preloader/Preloader.jsx'
+import Layout from './assets/utils/Layout.jsx'
+import CarDetails from './assets/pages/cars/CarDetails.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <>
-      <Header />
-      <Hero />
-      <About />
-      <BookForm />
-      <Service />
-      <Cars />
-      <Contact />
-      <Footer />
+      {
+        isLoading ? (
+          <Preloader onDone={() => setIsLoading(false)} />
+        ) : (
+          <>
+            <BrowserRouter>
+              <Routes>
+                <Route path='/' element={<Layout />} />
+                <Route path='/car-details/:car' element={<CarDetails />} />
+              </Routes>
+            </BrowserRouter>
+          </>
+        )
+      }
     </>
   )
 }

@@ -10,7 +10,12 @@ export const cars = [
         "horsepower_hp": 255,
         "engine_type": "inline-4",
         "fuel_type": "Petrol",
-        "image": "/images/BMW.jpg"
+        "mainImage": "/images/BMW.jpg",
+        "images": [
+            "/images/int1.jpg",
+            "/images/int2.jpeg",
+            "/images/int3.jpeg",
+        ],
     },
     {
         "brand": "Mercedes-Benz",
@@ -23,7 +28,12 @@ export const cars = [
         "horsepower_hp": 255,
         "engine_type": "inline-4",
         "fuel_type": "Petrol",
-        "image": "/images/c-class.jpg"
+        "mainImage": "/images/c-class.jpg",
+        "images": [
+            "/images/int1.jpg",
+            "/images/int2.jpeg",
+            "/images/int3.jpeg",
+        ],
     },
     {
         "brand": "MG",
@@ -36,7 +46,12 @@ export const cars = [
         "horsepower_hp": 143,
         "engine_type": "inline-4",
         "fuel_type": "Petrol",
-        "image": "/images/MG-hector.jpg"
+        "mainImage": "/images/MG-hector.jpg",
+        "images": [
+            "/images/int1.jpg",
+            "/images/int2.jpeg",
+            "/images/int3.jpeg",
+        ],
     },
     {
         "brand": "Porsche",
@@ -49,7 +64,12 @@ export const cars = [
         "horsepower_hp": 379,
         "engine_type": "flat-6",
         "fuel_type": "Petrol",
-        "image": "/images/porsche.jpeg"
+        "mainImage": "/images/porsche.jpeg",
+        "images": [
+            "/images/int1.jpg",
+            "/images/int2.jpeg",
+            "/images/int3.jpeg",
+        ],
     }
 ]
 

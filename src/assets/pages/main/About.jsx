@@ -30,7 +30,7 @@ export default function About() {
                         <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-background common-heading tracking-wider">We are more than a car rental company</h2>
                     </div>
                     <p className="text-lg md:text-base lg:text-xl text-textWhite leading-snug tracking-wider font-bold p-font">
-                        At <span className="text-amber-400 font-semibold">Company</span>, we believe every journey should be
+                        At <span className="text-textOrange font-semibold">Company</span>, we believe every journey should be
                         memorable. With a fleet of top-tier vehicles and unmatched customer service, we make sure your ride
                         is not just comfortable but also stylish.
                     </p>
