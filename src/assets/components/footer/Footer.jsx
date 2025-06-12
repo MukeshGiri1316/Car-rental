@@ -33,7 +33,7 @@ const Footer = () => {
                             <a href="https://wa.me/1234567890" target="_blank" className="hover:text-textOrange transition"><FaWhatsapp /></a>
                             <a href="https://facebook.com" target="_blank" className="hover:text-textOrange transition"><FaFacebookF /></a>
                         </div>
-                        <ul className="space-y-2 text-textWhite font-semibold tracking-wider p-font text-sm  lg:text-base">
+                        <ul className="space-y-2 text-textWhite font-semibold tracking-wider p-font text-base md:text-sm  lg:text-base">
                             <li className="flex items-center justify-normal md:justify-end gap-2"><FaPhoneAlt className="text-textOrange" /> +1 234 567 890</li>
                             <li className="flex items-center justify-normal md:justify-end gap-2"><FaEnvelope className="text-textOrange" /> info@company.com</li>
                             <li className="flex items-center justify-normal md:justify-end gap-2"><FaMapMarkerAlt className="text-textOrange" /> 123 Main St, Los Angeles, CA</li>

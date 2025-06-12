@@ -89,7 +89,7 @@ export default function Cars() {
                         onMouseLeave={handleMouseLeave}
                         className="bg-background text-primary px-6 py-5 rounded-b-3xl flex flex-col md:flex-row justify-between items-center text-sm gap-4 shadow-lg backdrop-blur-sm mt-2"
                     >
-                        <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center text-sm md:text-base md:justify-start">
+                        <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center text-sm md:text-base md:justify-start capitalize">
                             <div className="flex items-center gap-2">
                                 <FaCar className="text-accent" />
                                 <span className="font-medium">{cars[currentIndex].model}</span>

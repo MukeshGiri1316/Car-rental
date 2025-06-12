@@ -38,7 +38,7 @@ export default function BookForm() {
                         </p>
                     </div>
                     <div>
-                        <ul className="space-y-2 text-textWhite font-semibold tracking-wider p-font text-sm  lg:text-base">
+                        <ul className="space-y-2 text-textWhite tracking-widest text-xs  lg:text-base">
                             <li className="flex items-center gap-2"><FaPhoneAlt className="text-textOrange" /> +1 234 567 890</li>
                             <li className="flex items-center gap-2"><FaEnvelope className="text-textOrange" /> info@company.com</li>
                             <li className="flex items-center gap-2"><FaMapMarkerAlt className="text-textOrange" /> 123 Main St, Los Angeles, CA</li>
@@ -79,7 +79,7 @@ export default function BookForm() {
                         <textarea id="notes" placeholder="Any preferences" className="w-full p-2 text-white border-b border-textOrange outline-none" />
                     </div>
 
-                    <button type="submit" className="w-fit px-6 py-3 rounded bg-accent font-extrabold text-textWhite hover:bg-background hover:text-secondary transition-colors cursor-pointer">
+                    <button type="submit" className="inline-block bg-accent text-primary px-6 py-3 rounded-xl hover:bg-background hover:text-black transition duration-300 cursor-pointer">
                         Book Now
                     </button>
                 </form>
