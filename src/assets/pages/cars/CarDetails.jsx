@@ -9,8 +9,9 @@ import Contact from './Contact.jsx'
 
 const CarDetails = () => {
     const location = useLocation();
-    const param = location.pathname;
-    const id = param.split('/')[2];
+    const searchParams = new URLSearchParams(location.search);
+    const id = searchParams.get('car');
+    console.log(id)
     const car = cars[id];
     const [mainImage, setMainImage] = useState(car.mainImage);
     const [thumbnails, setThumbnails] = useState(car.images);

@@ -107,7 +107,7 @@ export default function Cars() {
                                 <span className="font-medium">{cars[currentIndex].average_kmpl}</span>
                             </div>
                         </div>
-                        <Link to={`/car-details/${currentIndex}`} className="bg-textOrange/80 hover:bg-textOrange active:scale-95 text-secondary font-semibold px-6 py-3 rounded-full transition shadow-md cursor-pointer">
+                        <Link to={`/car-details?car=${currentIndex}`} className="bg-textOrange/80 hover:bg-textOrange active:scale-95 text-secondary font-semibold px-6 py-3 rounded-full transition shadow-md cursor-pointer">
                             More Details
                         </Link>
                     </div>

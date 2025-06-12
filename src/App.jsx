@@ -18,7 +18,7 @@ function App() {
             <BrowserRouter>
               <Routes>
                 <Route path='/' element={<Layout />} />
-                <Route path='/car-details/:car' element={<CarDetails />} />
+                <Route path='/car-details' element={<CarDetails />} />
               </Routes>
             </BrowserRouter>
           </>
